@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,26 @@ namespace TestPshico
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            // достать номер вопроса и сам вопрос 
+            // отправть ответ
+            // посчитать результат
+
+
+            DB db = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+           
+
+            for (int i = 1; i <= 58; i++)
+            {
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `question` WHERE `Num_Question` == i");
+            }
+        }
+
     }
 }
