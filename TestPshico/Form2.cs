@@ -20,7 +20,7 @@ namespace TestPshico
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //rererasdasd asasdpais odiasojd jaosd
             // достать номер вопроса и сам вопрос 
             // отправть ответ
             // посчитать результат
